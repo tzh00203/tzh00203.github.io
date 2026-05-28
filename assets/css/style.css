@@ -1,13 +1,14 @@
 :root {
-  --bg: #f7f8f8;
+  --bg: #f8f7f4;
   --surface: #ffffff;
   --ink: #17201c;
   --muted: #64706b;
-  --line: #dbe1de;
-  --accent: #0f6b59;
-  --accent-strong: #0a4d41;
-  --warm: #b7602b;
-  --shadow: 0 18px 45px rgba(23, 32, 28, 0.08);
+  --line: #ddd8cf;
+  --accent: #126050;
+  --accent-strong: #0b463a;
+  --warm: #9d5630;
+  --soft: #edf4f0;
+  --shadow: 0 22px 55px rgba(30, 37, 33, 0.1);
   --max: 1100px;
 }
 
@@ -29,11 +30,11 @@ body {
 
 .academic-page {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 52px;
-  max-width: 1050px;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 56px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 48px 24px 72px;
+  padding: 54px 24px 78px;
 }
 
 .sidebar {
@@ -41,11 +42,17 @@ body {
   top: 34px;
   align-self: start;
   min-height: 420px;
+  padding: 28px 24px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow);
 }
 
 .sidebar h1 {
-  margin: 14px 0 8px;
-  font-size: 32px;
+  margin: 18px 0 8px;
+  font-size: 34px;
   line-height: 1.1;
 }
 
@@ -57,7 +64,7 @@ body {
 
 .profile-links {
   display: grid;
-  gap: 8px;
+  gap: 7px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -65,7 +72,7 @@ body {
 
 .profile-links a {
   display: inline-flex;
-  min-height: 28px;
+  min-height: 30px;
   align-items: center;
   color: var(--accent);
   font-weight: 700;
@@ -76,14 +83,26 @@ body {
 }
 
 .plain-section {
-  padding: 0 0 28px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid var(--line);
+  position: relative;
+  padding: 0 0 30px;
+  margin-bottom: 31px;
+  border-bottom: 1px solid rgba(221, 216, 207, 0.92);
 }
 
 .plain-section h2 {
-  margin-bottom: 14px;
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.plain-section h2::after {
+  content: "";
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--line);
 }
 
 .plain-section h3 {
@@ -97,8 +116,13 @@ body {
 }
 
 .quote {
-  color: #3b4a44;
-  font-style: italic;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--soft);
+  color: #30443b;
+  font-weight: 650;
 }
 
 .entry-list,
@@ -126,6 +150,36 @@ body {
   margin-left: 8px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  min-height: 94px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 12px 28px rgba(30, 37, 33, 0.06);
+}
+
+.metric strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent-strong);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.metric span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .page-footer {
@@ -293,12 +347,13 @@ h3 {
 
 .avatar {
   display: grid;
-  width: 92px;
-  height: 92px;
+  width: 96px;
+  height: 96px;
   margin-bottom: 24px;
   place-items: center;
   border-radius: 50%;
-  background: #e8f0ed;
+  border: 1px solid #c8dbd2;
+  background: var(--soft);
   color: var(--accent-strong);
   font-size: 26px;
   font-weight: 850;
@@ -498,6 +553,10 @@ dd {
 }
 
 @media (max-width: 520px) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero,
   .project-hero,
   .section {
