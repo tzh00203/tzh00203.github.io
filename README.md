@@ -1,0 +1,46 @@
+# Personal Academic Website
+
+This is a static academic homepage designed for GitHub Pages.
+
+## Deploy on GitHub Pages
+
+1. Create a GitHub repository named:
+
+   ```text
+   yourname.github.io
+   ```
+
+2. Copy the files in this directory into that repository.
+
+3. Commit and push to the `main` branch.
+
+4. In GitHub:
+
+   ```text
+   Settings -> Pages -> Build and deployment
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /root
+   ```
+
+5. The site will be available at:
+
+   ```text
+   https://yourname.github.io
+   ```
+
+## Before publishing
+
+- Replace `Your Name` with your English name.
+- Replace `YN` in the avatar with your initials.
+- Replace `yourname [at] mails.tsinghua.edu.cn` with your academic email.
+- Replace GitHub links with your GitHub username.
+- Replace `cv.html` with your final CV content, or update the homepage link to `assets/pdf/CV_YourName.pdf`.
+- Replace `research-summary.html` with your final research summary, or update the homepage link to `assets/pdf/Research_Summary_YourName.pdf`.
+- Update publication, project, award, service, education, and miscellaneous entries.
+
+## Privacy notes
+
+Do not commit API keys, `.env` files, local paths, server IPs, phone numbers, or
+private addresses. GitHub Pages serves static files only; this site has no
+backend and exposes no local ports.
