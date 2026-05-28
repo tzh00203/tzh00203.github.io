@@ -31,8 +31,8 @@ This is a static academic homepage designed for GitHub Pages.
 
 ## Before publishing
 
-- Replace `Your Name` with your English name.
-- Replace `YN` in the avatar with your initials.
+- Replace `Tian Zhenhao` with your preferred English name if needed.
+- Replace `TZ` in the avatar with your preferred initials if needed.
 - Replace `yourname [at] mails.tsinghua.edu.cn` with your academic email.
 - Replace GitHub links with your GitHub username.
 - Replace `cv.html` with your final CV content, or update the homepage link to `assets/pdf/CV_YourName.pdf`.
