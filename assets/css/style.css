@@ -30,7 +30,7 @@ body {
 
 .academic-page {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 246px minmax(0, 1fr);
   gap: 48px;
   max-width: 1080px;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {
   top: 34px;
   align-self: start;
   min-height: 0;
-  padding: 22px 20px;
+  padding: 20px 18px;
   border: 1px solid var(--line);
   border-top: 5px solid var(--accent);
   border-radius: 8px;
@@ -51,8 +51,8 @@ body {
 }
 
 .sidebar h1 {
-  margin: 14px 0 6px;
-  font-size: 29px;
+  margin: 13px 0 6px;
+  font-size: 24px;
   line-height: 1.1;
 }
 
@@ -345,18 +345,21 @@ h3 {
   padding: 24px;
 }
 
-.avatar {
-  display: grid;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 18px;
-  place-items: center;
-  border-radius: 50%;
+.profile-photo {
+  width: 126px;
+  height: 126px;
+  margin: 0 0 17px;
+  overflow: hidden;
   border: 1px solid #c8dbd2;
+  border-radius: 8px;
   background: var(--soft);
-  color: var(--accent-strong);
-  font-size: 26px;
-  font-weight: 850;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 dl {
