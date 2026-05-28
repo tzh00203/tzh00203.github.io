@@ -36,7 +36,6 @@ This is a static academic homepage designed for GitHub Pages.
 - Replace `yourname [at] mails.tsinghua.edu.cn` with your academic email.
 - Replace GitHub links with your GitHub username.
 - Replace `cv.html` with your final CV content, or update the homepage link to `assets/pdf/CV_YourName.pdf`.
-- Replace `research-summary.html` with your final research summary, or update the homepage link to `assets/pdf/Research_Summary_YourName.pdf`.
 - Update publication, project, award, service, education, and miscellaneous entries.
 
 ## Privacy notes
