@@ -30,7 +30,7 @@ body {
 
 .academic-page {
   display: grid;
-  grid-template-columns: 246px minmax(0, 1fr);
+  grid-template-columns: 238px minmax(0, 1fr);
   gap: 48px;
   max-width: 1080px;
   margin: 0 auto;
@@ -42,12 +42,13 @@ body {
   top: 34px;
   align-self: start;
   min-height: 0;
-  padding: 20px 18px;
+  padding: 22px 18px;
   border: 1px solid var(--line);
   border-top: 5px solid var(--accent);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.86);
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .sidebar h1 {
@@ -60,13 +61,15 @@ body {
   margin-bottom: 15px;
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.45;
 }
 
 .profile-links {
   display: grid;
-  gap: 7px;
-  margin: 0;
-  padding: 0;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
   list-style: none;
 }
 
@@ -74,6 +77,7 @@ body {
   display: inline-flex;
   min-height: 30px;
   align-items: center;
+  justify-content: center;
   color: var(--accent);
   font-weight: 700;
 }
@@ -346,12 +350,12 @@ h3 {
 }
 
 .profile-photo {
-  width: 126px;
-  height: 126px;
-  margin: 0 0 17px;
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 15px;
   overflow: hidden;
   border: 1px solid #c8dbd2;
-  border-radius: 8px;
+  border-radius: 50%;
   background: var(--soft);
 }
 
