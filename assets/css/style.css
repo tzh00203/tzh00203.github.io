@@ -30,8 +30,8 @@ body {
 
 .academic-page {
   display: grid;
-  grid-template-columns: 238px minmax(0, 1fr);
-  gap: 48px;
+  grid-template-columns: 216px minmax(0, 1fr);
+  gap: 42px;
   max-width: 1080px;
   margin: 0 auto;
   padding: 46px 24px 72px;
@@ -42,7 +42,7 @@ body {
   top: 34px;
   align-self: start;
   min-height: 0;
-  padding: 22px 18px;
+  padding: 18px 16px;
   border: 1px solid var(--line);
   border-top: 5px solid var(--accent);
   border-radius: 8px;
@@ -52,13 +52,13 @@ body {
 }
 
 .sidebar h1 {
-  margin: 13px 0 6px;
-  font-size: 24px;
+  margin: 10px 0 5px;
+  font-size: 22px;
   line-height: 1.1;
 }
 
 .subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.45;
@@ -66,16 +66,16 @@ body {
 
 .profile-links {
   display: grid;
-  gap: 6px;
-  margin: 16px 0 0;
-  padding-top: 15px;
+  gap: 4px;
+  margin: 12px 0 0;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
   list-style: none;
 }
 
 .profile-links a {
   display: inline-flex;
-  min-height: 30px;
+  min-height: 26px;
   align-items: center;
   justify-content: center;
   color: var(--accent);
@@ -350,9 +350,9 @@ h3 {
 }
 
 .profile-photo {
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 15px;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 11px;
   overflow: hidden;
   border: 1px solid #c8dbd2;
   border-radius: 50%;
