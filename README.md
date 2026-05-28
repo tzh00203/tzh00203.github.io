@@ -31,7 +31,7 @@ This is a static academic homepage designed for GitHub Pages.
 
 ## Before publishing
 
-- Replace `Tian Zhenhao` with your preferred English name if needed.
+- Replace `Zhenhao Tian` with your preferred English name if needed.
 - Replace `TZ` in the avatar with your preferred initials if needed.
 - Replace `yourname [at] mails.tsinghua.edu.cn` with your academic email.
 - Replace GitHub links with your GitHub username.
