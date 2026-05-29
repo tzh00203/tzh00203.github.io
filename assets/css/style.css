@@ -95,6 +95,12 @@ body {
   color: #122847;
 }
 
+.hosted-note {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .content {
   min-width: 0;
 }
