@@ -135,15 +135,30 @@ body {
   padding-left: 20px;
 }
 
+.entry-list {
+  display: grid;
+  gap: 8px;
+  padding-left: 0;
+  list-style: none;
+}
+
 .entry-list li,
 .publication-list li,
 .compact-list li {
   margin-bottom: 9px;
 }
 
+.entry-list li {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  margin-bottom: 0;
+}
+
 .date {
-  display: inline-block;
-  min-width: 86px;
+  display: block;
+  min-width: 0;
   color: var(--warm);
   font-weight: 800;
 }
@@ -575,6 +590,11 @@ dd {
 @media (max-width: 520px) {
   .metric-grid {
     grid-template-columns: 1fr;
+  }
+
+  .entry-list li {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 
   .hero,
