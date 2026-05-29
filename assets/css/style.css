@@ -67,21 +67,32 @@ body {
   list-style: none;
 }
 
-.profile-links a,
-.profile-item {
+.profile-contact {
   display: inline-flex;
   min-height: 26px;
   align-items: center;
+  gap: 8px;
   justify-content: flex-start;
-  font-weight: 700;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 650;
 }
 
-.profile-links a {
-  color: var(--accent);
+.profile-contact svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
-.profile-item {
-  color: var(--muted);
+.profile-links a.profile-contact:hover,
+.profile-links a.profile-contact:focus-visible {
+  color: #122847;
 }
 
 .content {
