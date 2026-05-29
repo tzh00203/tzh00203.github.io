@@ -42,12 +42,7 @@ body {
   top: 34px;
   align-self: start;
   min-height: 0;
-  padding: 18px 16px;
-  border: 1px solid var(--line);
-  border-top: 5px solid var(--accent);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: var(--shadow);
+  padding: 4px 8px;
   text-align: center;
 }
 
@@ -68,8 +63,7 @@ body {
   display: grid;
   gap: 4px;
   margin: 12px 0 0;
-  padding: 12px 0 0;
-  border-top: 1px solid var(--line);
+  padding: 0;
   list-style: none;
 }
 
@@ -88,9 +82,8 @@ body {
 
 .plain-section {
   position: relative;
-  padding: 0 0 30px;
-  margin-bottom: 31px;
-  border-bottom: 1px solid rgba(221, 216, 207, 0.92);
+  padding: 0;
+  margin-bottom: 34px;
 }
 
 .plain-section h2 {
@@ -103,7 +96,7 @@ body {
 
 .plain-section h2::after {
   content: "";
-  display: block;
+  display: none;
   flex: 1;
   height: 1px;
   background: var(--line);
