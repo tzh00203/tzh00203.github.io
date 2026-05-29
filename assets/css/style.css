@@ -59,6 +59,12 @@ body {
   line-height: 1.45;
 }
 
+.location {
+  margin: -4px 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .profile-links {
   display: grid;
   gap: 4px;
