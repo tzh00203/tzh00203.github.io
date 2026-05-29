@@ -202,6 +202,23 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.content a {
+  padding: 0 2px;
+  border-radius: 4px;
+  background: var(--soft);
+  color: var(--accent-strong);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.content a:hover,
+.content a:focus-visible {
+  background: #dceae4;
+  color: #06382f;
+}
+
 .site-header {
   position: sticky;
   top: 0;
