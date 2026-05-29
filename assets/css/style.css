@@ -40,8 +40,10 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-self: stretch;
-  min-height: 0;
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  min-height: calc(100vh - 70px);
   padding: 4px 8px;
   text-align: left;
 }
@@ -568,6 +570,7 @@ dd {
   }
 
   .sidebar {
+    position: static;
     min-height: 0;
   }
 
