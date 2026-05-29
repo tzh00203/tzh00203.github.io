@@ -150,8 +150,8 @@ body {
 
 .entry-list li {
   display: grid;
-  grid-template-columns: 125px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 6px;
   align-items: start;
   margin-bottom: 0;
 }
