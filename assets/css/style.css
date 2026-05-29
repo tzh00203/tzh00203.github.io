@@ -169,6 +169,10 @@ body {
   margin-bottom: 0;
 }
 
+.entry-list.wide-dates li {
+  grid-template-columns: 150px minmax(0, 1fr);
+}
+
 .date {
   display: block;
   min-width: 0;
