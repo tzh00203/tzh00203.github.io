@@ -59,12 +59,6 @@ body {
   line-height: 1.45;
 }
 
-.location {
-  margin: -4px 0 14px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
 .profile-links {
   display: grid;
   gap: 4px;
@@ -73,13 +67,21 @@ body {
   list-style: none;
 }
 
-.profile-links a {
+.profile-links a,
+.profile-item {
   display: inline-flex;
   min-height: 26px;
   align-items: center;
   justify-content: flex-start;
-  color: var(--accent);
   font-weight: 700;
+}
+
+.profile-links a {
+  color: var(--accent);
+}
+
+.profile-item {
+  color: var(--muted);
 }
 
 .content {
