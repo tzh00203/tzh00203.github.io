@@ -33,7 +33,7 @@ This is a static academic homepage designed for GitHub Pages.
 
 - Replace `Zhenhao Tian` with your preferred English name if needed.
 - Replace `assets/img/profile.svg` with your personal photo when ready.
-- Replace `tzh00203@163.com` with your preferred public email if needed.
+- Replace `tian-zh24@mails.tsinghua.edu.cn` with your preferred public email if needed.
 - Replace `cv.html` with your final CV content, or update the homepage link to `assets/pdf/CV_YourName.pdf`.
 - Update publication, project, award, service, education, and miscellaneous entries.
 
