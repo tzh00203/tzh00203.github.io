@@ -38,10 +38,12 @@ body {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 34px;
   align-self: start;
-  min-height: 0;
+  min-height: calc(100vh - 68px);
   padding: 4px 8px;
   text-align: left;
 }
@@ -96,7 +98,7 @@ body {
 }
 
 .hosted-note {
-  margin: 24px 0 0;
+  margin: auto 0 0;
   color: var(--muted);
   font-size: 12px;
 }
@@ -570,6 +572,10 @@ dd {
   .sidebar {
     position: static;
     min-height: 0;
+  }
+
+  .hosted-note {
+    margin-top: 18px;
   }
 
   .nav {
