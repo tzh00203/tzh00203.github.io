@@ -150,13 +150,33 @@ body {
 }
 
 .pet-memory {
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.pet-memory summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  color: var(--accent-strong);
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.pet-memory summary:hover,
+.pet-memory summary:focus-visible {
+  color: #122847;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pet-memory-body {
   display: grid;
   grid-template-columns: 108px minmax(0, 1fr);
   gap: 14px;
   align-items: start;
-  margin: 20px 0 0;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
+  margin-top: 12px;
 }
 
 .pet-memory img {
@@ -168,12 +188,8 @@ body {
   object-position: 50% 45%;
 }
 
-.pet-memory figcaption {
+.pet-memory-text {
   min-width: 0;
-}
-
-.pet-memory h3 {
-  margin-top: 0;
 }
 
 .pet-memory p:last-child {
@@ -657,7 +673,7 @@ dd {
     gap: 2px;
   }
 
-  .pet-memory {
+  .pet-memory-body {
     grid-template-columns: 88px minmax(0, 1fr);
   }
 
