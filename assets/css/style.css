@@ -30,8 +30,8 @@ body {
 
 .academic-page {
   display: grid;
-  grid-template-columns: 216px minmax(0, 1fr);
-  gap: 42px;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 38px;
   max-width: 1080px;
   margin: 0 auto;
   padding: 46px 24px 72px;
@@ -151,21 +151,21 @@ body {
 
 .pet-memory {
   display: grid;
-  grid-template-columns: 156px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 14px;
   align-items: start;
   margin: 20px 0 0;
-  padding-top: 18px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
 }
 
 .pet-memory img {
   display: block;
-  width: 156px;
-  aspect-ratio: 3 / 4;
+  width: 108px;
+  aspect-ratio: 1;
   border-radius: 8px;
   object-fit: cover;
-  object-position: 50% 44%;
+  object-position: 50% 45%;
 }
 
 .pet-memory figcaption {
@@ -434,12 +434,12 @@ h3 {
 }
 
 .profile-photo {
-  width: 72px;
-  height: 72px;
+  width: 190px;
+  height: 190px;
   margin: 0 0 11px;
   overflow: hidden;
-  border: 1px solid #c8dbd2;
-  border-radius: 50%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: var(--soft);
 }
 
@@ -658,11 +658,11 @@ dd {
   }
 
   .pet-memory {
-    grid-template-columns: 1fr;
+    grid-template-columns: 88px minmax(0, 1fr);
   }
 
   .pet-memory img {
-    width: min(100%, 240px);
+    width: 88px;
   }
 
   .hero,
