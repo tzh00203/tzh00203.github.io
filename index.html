@@ -6,7 +6,8 @@
     <meta name="description" content="Academic homepage for a security researcher working on LLM-assisted security analysis, program analysis, and vulnerability discovery.">
     <meta name="author" content="Zhenhao Tian">
     <title>Zhenhao Tian | Tsinghua University</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261117">
+    <link rel="stylesheet" href="assets/css/homepage.css?v=20261117">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,14 +24,14 @@
     }
     </script>
   </head>
-  <body>
+  <body class="homepage">
     <main class="academic-page">
       <aside class="sidebar">
         <figure class="profile-photo">
-          <img src="assets/img/041ee5af4d082a165237ae47a340b5dd.jpg" alt="Portrait of Zhenhao Tian">
+          <img src="assets/img/041ee5af4d082a165237ae47a340b5dd.jpg" alt="Portrait of Zhenhao Tian" width="190" height="190">
         </figure>
         <h1>Zhenhao Tian</h1>
-        <p class="subtitle">M.S. Student @ THU</p>
+        <p class="subtitle">M.S. Student<br>Tsinghua University</p>
         <ul class="profile-links">
           <li>
             <span class="profile-contact">
@@ -59,12 +60,18 @@
             </a>
           </li>
         </ul>
+        <nav class="section-nav" aria-label="Page sections">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#misc">Beyond research</a>
+        </nav>
         <p class="hosted-note">Hosted on GitHub Pages.</p>
       </aside>
 
       <div class="content">
-        <section class="plain-section">
-          <h2>About Me</h2>
+        <section class="plain-section" id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Me</h2>
           <p>
             I am a second-year master's student at the
             <a href="https://netsec.ccert.edu.cn/en/">Network and Information Security Lab (NISL)</a>,
@@ -89,7 +96,7 @@
           </p>
         </section>
 
-        <section class="plain-section">
+        <section class="plain-section" id="research">
           <h2>Research Interests</h2>
           <ul class="compact-list">
             <li>LLM-assisted security analysis</li>
@@ -98,23 +105,33 @@
           </ul>
         </section>
 
-        <section class="plain-section">
-          <h2>Publications</h2>
+        <section class="plain-section" id="publications" aria-labelledby="publications-heading">
+          <h2 id="publications-heading">Publications</h2>
           <ul class="publication-list">
-            <li>
-              <strong>BLMProbe: Enhancing Internet-Connected Device Discovery by Automated Device Labeling and Label Migration</strong><br>
-              <strong>Zhenhao Tian</strong>, Yi He, Nuo Zhang, Qixiao Lin, Hetian Shi, Jianwei Zhuge, Jian Mao, Deliang Chang<br>
-              <em>IEEE Transactions on Information Forensics and Security (TIFS), vol. 20, pp. 7227-7242, 2025.</em>
+            <li class="publication">
+              <h3 class="publication-title">BLMProbe: Enhancing Internet-Connected Device Discovery by Automated Device Labeling and Label Migration</h3>
+              <p class="publication-authors"><strong>Zhenhao Tian</strong>, Yi He, Nuo Zhang, Qixiao Lin, Hetian Shi, Jianwei Zhuge, Jian Mao, Deliang Chang</p>
+              <p class="publication-venue"><em>IEEE Transactions on Information Forensics and Security (TIFS)</em>, vol. 20, pp. 7227–7242, 2025.</p>
+              <div class="publication-links" aria-label="Resources for BLMProbe">
+                <a href="https://doi.org/10.1109/TIFS.2025.3587211" aria-label="Read BLMProbe paper">Paper <span aria-hidden="true">↗</span></a>
+              </div>
             </li>
-            <li>
-              <strong>Physical-Layer Exploits on EV Chargers: Authentication and Systemic Protocol Weaknesses</strong><br>
-              Hetian Shi, Shangru Song, Yi He, <strong>Zhenhao Tian</strong>, Jianwei Zhuge, Jian Mao<br>
-              <em>Security and Safety, accepted version, 2026.</em>
+            <li class="publication">
+              <h3 class="publication-title">Physical-Layer Exploits on EV Chargers: Authentication and Systemic Protocol Weaknesses</h3>
+              <p class="publication-authors">Hetian Shi, Shangru Song, Yi He, <strong>Zhenhao Tian</strong>, Jianwei Zhuge, Jian Mao</p>
+              <p class="publication-venue"><em>Security and Safety</em>, accepted version, 2026.</p>
+              <div class="publication-links" aria-label="Resources for Physical-Layer Exploits on EV Chargers">
+                <a href="https://doi.org/10.1051/sands/2026012" aria-label="Read Physical-Layer Exploits on EV Chargers paper">Paper <span aria-hidden="true">↗</span></a>
+              </div>
             </li>
-            <li>
-              <strong><a href="https://cyber-llm.github.io/">Large Language Models for Cybersecurity: A Survey of Data, Training, Models, Agent Systems, Evaluation, and Applications</a></strong><br>
-              Fasheng Miao, Yuanda Wang, Zhaoyu Hu, Jiutian Zeng, Xiang Li, Shuying Zhuang, Yiliang Zhang, Ziang Weng, Chengwei Dai, Junjie Li, Haokang Zhang, Ruipeng Jia, Jiadong Fu, Yang Ge, Xiuqi Lu, <strong>Zhenhao Tian</strong>, Yuqi Qiu, Zuyao Xu, Lu Sun, Aichun Huang, Changqing An, Xinhui Han, Chao Zhang, Longtao Huang, Haixin Duan, Zheli Liu, Jilong Wang<br>
-              <em>Preprints.org, 2026. <a href="https://doi.org/10.20944/preprints202610.2235.v1">DOI: 10.20944/preprints202610.2235.v1</a></em>
+            <li class="publication">
+              <h3 class="publication-title">Large Language Models for Cybersecurity: A Survey of Data, Training, Models, Agent Systems, Evaluation, and Applications</h3>
+              <p class="publication-authors">Fasheng Miao, Yuanda Wang, Zhaoyu Hu, Jiutian Zeng, Xiang Li, Shuying Zhuang, Yiliang Zhang, Ziang Weng, Chengwei Dai, Junjie Li, Haokang Zhang, Ruipeng Jia, Jiadong Fu, Yang Ge, Xiuqi Lu, <strong>Zhenhao Tian</strong>, Yuqi Qiu, Zuyao Xu, Lu Sun, Aichun Huang, Changqing An, Xinhui Han, Chao Zhang, Longtao Huang, Haixin Duan, Zheli Liu, Jilong Wang</p>
+              <p class="publication-venue"><em>Preprints.org</em>, preprint, 2026.</p>
+              <div class="publication-links" aria-label="Resources for Large Language Models for Cybersecurity">
+                <a href="https://doi.org/10.20944/preprints202610.2235.v1" aria-label="Read Large Language Models for Cybersecurity paper">Paper <span aria-hidden="true">↗</span></a>
+                <a href="https://cyber-llm.github.io/" aria-label="Visit Large Language Models for Cybersecurity project">Project <span aria-hidden="true">↗</span></a>
+              </div>
             </li>
           </ul>
         </section>
@@ -174,7 +191,7 @@
           </ul>
         </section>
 
-        <section class="plain-section">
+        <section class="plain-section" id="experience">
           <h2>Internships</h2>
           <ul class="entry-list wide-dates">
             <li>
@@ -192,7 +209,7 @@
           </ul>
         </section>
 
-        <section class="plain-section">
+        <section class="plain-section" id="misc">
           <h2>Misc</h2>
           <p>
             Outside research, I enjoy sports including table tennis, fitness,
